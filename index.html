@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <script src="./js/main.js" defer></script>
+
+   <title>Portafolio</title>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+         <a class="navbar-brand text-white fs-3" href="#">Jesús Camacho</a>
+
+
+
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-lg-4 py-3">
+               <li class="nav-item">
+                  <div class="navbar__icon">
+                     <div class="navbar__icon-moon">
+                        <i class="bx bx-moon"> </i>
+                     </div>
+                     <div class="navbar__icon-sun logo__darkmode">
+                        <i class='bx bxs-sun'></i>
+                     </div>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">Nosotros</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#services">Servicios</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portafolio</a>
+               </li>
+            </ul>
+
+         </div>
+      </div>
+   </nav>
+   <header class="wave" id="inicio">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-5 text-white mt-4 ms-md-5 text-center-xs" style="z-index: 1;">
+               <h1 class="fw-normal">Desarrollo web Front-end</h1>
+               <p class="description">Manejo Professional de herramientas para diseño y desarrollo de páginas web adquirido a lo largo de mi
+                  carrera</p>
+               <a class="btn btn-lg btn-primary" href="#portfolio">Mis Trabajos <i
+                     class="bi bi-arrow-right-circle"></i></a>
+            </div>
+            <div class="col ms-md-5 mt-3 mt-md-0 text-center-xs" style="z-index: 1;">
+               <img class="img-fluid" width="498" src="/img/portada.png">
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- seccion nosotros -->
+   <section id="about" class="about">
+      <div class="container">
+         <div class="section-title">
+            <h2>YO</h2>
+         </div>
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="d-flex member">
+                  <div class="pic"><img src="img/perfil1.jpg" class="img-fluid" alt=""></div>
+                  <div class="ps-4">
+                     <h4>Jesús L. Camacho</h4>
+                     <span>Desarrollador Front-end</span>
+                     <p>Javacript, react, python y más...</p>
+                     <div class="d-flex mt-3">
+                        <a href="#" class="ms-2"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="ms-2"><i class="bi bi-linkedin"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- seccion servicios -->
+   <section id="services" class="services section-bg">
+      <div class="container">
+         <div class="section-title">
+            <h2>Servicios</h2>
+         </div>
+         <div class="row">
+
+
+            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 d-flex align-items-stretch">
+               <div class="icon-box">
+                  <div class="icon mb-3"><i class="bi bi-code-square"></i></div>
+                  <h4>Desarrollo web</h4>
+                  <p>Realizamos sitios web front-end y web-apps para ser desplegadas en plataformas
+                     como horoku, netlify...</p>
+               </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+               <div class="icon-box">
+                  <div class="icon mb-3"><i class="bi bi-cloud-minus"></i></div>
+                  <h4>API's</h4>
+                  <p>Integración de API's y servicios en la nube desde cero. la nube desde cero.</p>
+               </div>
+            </div>
+
+
+
+
+         </div>
+      </div>
+   </section>
+
+   <!-- seccion Portafolio -->
+   <section id="portfolio" class="portfolio">
+      <div class="container">
+         <div class="section-title">
+            <h2>Portafolio</h2>
+         </div>
+         <ul id="portfolio-filters" class="d-flex justify-content-center">
+            <li data-filter="*" class="filter-active">Todo</li>
+            <li data-filter=".filter-laravel">Laravel</li>
+            <li data-filter=".filter-js">Javacript Vanilla</li>
+            <li data-filter=".filter-react">React</li>
+         </ul>
+         <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-laravel mb-4">
+               <div class="portfolio-img">
+                  <img src="img/portafolio1.PNG" class="img-fluid ">
+                  <div class="portfolio-info">
+                     <h4>Sistema Estadistica</h4>
+
+                     <p class="me-5">Laravel y bootstrap</p>
+
+                     <a href="img/portafolio1.PNG" title="Sistema Estadistica" class="preview-link popup-image"><i
+                           class="bi bi-plus"></i></a>
+
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-laravel mb-4">
+               <div class="portfolio-img">
+                  <img src="img/portafolio2.PNG" class="img-fluid ">
+                  <div class="portfolio-info">
+                     <h4>Sistema de registro de Repuestos</h4>
+
+                     <p class="me-5">Laravel y bootstrap</p>
+
+                     <a href="img/portafolio2.PNG" title="Sistema de registro de Repuestos"
+                        class="preview-link popup-image"><i class="bi bi-plus"></i></a>
+
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-js mb-4">
+               <div class="portfolio-img">
+                  <img src="img/portafolio3.PNG" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Ecommerce</h4>
+
+                     <p class="me-5">Javacript Vanilla y cosnsumo de api</p>
+
+                     <a href="img/portafolio3.PNG" title="Ecommerce" class="preview-link popup-image"><i
+                           class="bi bi-plus "></i></a>
+                     <a href="https://academlostore-jc.netlify.app/" title="Ver más" target="_blank"
+                        class="details-link"><i class="bi bi-link"></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+               <div class="portfolio-img">
+                  <img src="img/portafolio4.PNG" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Galletas De La Fortuna</h4>
+
+                     <p class="me-5">Aplicación web hecha con react y consumo de API</p>
+
+                     <a href="img/portafolio4.PNG" title="Galletas De La Fortuna" class="preview-link popup-image"><i
+                           class="bi bi-plus"></i></a>
+                     <a href="https://galletasdelafortuna-jc.netlify.app/" title="Ver más" target="_blank "
+                        class="details-link"><i class="bi bi-link "></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-react">
+               <div class="portfolio-img">
+                  <img src="img/portafolio5.PNG" class="img-fluid">
+                  <div class="portfolio-info">
+                     <h4>Aplicación del clima</h4>
+
+                     <p class="me-5">Aplicación web hecha con react y consumo de API</p>
+
+                     <a href="img/portafolio5.PNG" title="Aplicación del clima" class="preview-link popup-image"><i
+                           class="bi bi-plus"></i></a>
+                     <a href="https://weather-app-jlcm.netlify.app/" title="Ver más" target="_blank "
+                        class="details-link"><i class="bi bi-link "></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <h4 class="mb-3">Nosotros</h4>
+               <p>
+                  Somos un grupo de programadores, con conocimientos en programación web, escritorio y mobile.
+               </p>
+            </div>
+            <div class="col-md-3">
+               <h4 class="mb-3">Menu</h4>
+               <ul class="list-unstyled">
+                  <li><a href="">Nosostros</a></li>
+                  <li><a href="">Servicios</a></li>
+                  <li><a href="">Portafolio</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4 class="mb-3">Servicios</h4>
+               <ul class="list-unstyled">
+                  <li><a href="">Desarrollo Web</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <h4 class="mb-3">Redes Sociales</h4>
+               <div class="social">
+                  <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+               </div>
+               <div class="social">
+                  <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row">
+            <div class="col-12 text-center my-3">
+               <p>Copyrights © 2023</p>
+               <a href="#">Jesús Camacho</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <a href="#inicio" class="go-top" style="display: none;">
+      <i class='bx bxs-up-arrow'></i>
+   </a>
+
+
+
+
+
+   <!-- Optional JavaScript; choose one of the two! -->
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 "
+      crossorigin="anonymous "></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js "
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js "></script>
+   <script src="js/jquery.magnific-popup.min.js "></script>
+   <script src="js/script.js "></script>
+
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js " integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js " integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
