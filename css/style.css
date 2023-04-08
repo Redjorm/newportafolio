@@ -3,6 +3,7 @@
    --backgroundColor: white;
    --backgroundColorSection: #F9F9FD;
    --primaryColor: rgb(42, 85, 167);
+   --scrollColor: rgb(42, 85, 167);
    --textcolor: white;
    --serviceIcon: black;
    --borders: white;
@@ -38,20 +39,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-   background: var(--btnColor);
+   background: var(--scrollColor);
 }
 
-h4 {
+h4, p , span{
    color: var(--serviceIcon);
 }
 
-p {
-   color: var(--serviceIcon);
-}
-
-span {
-   color: var(--serviceIcon);
-}
 
 header {
    width: 100%;
@@ -313,11 +307,7 @@ section {
 
 
 
-/* contacto */
 
-iframe {
-   max-width: 100%;
-}
 
 
 /* footer */
