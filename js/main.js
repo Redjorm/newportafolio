@@ -1,3 +1,11 @@
+function preloader () {
+  const preloaderHTML = document.querySelector('.preloader')
+
+  window.addEventListener('load', () => {
+    preloaderHTML.style.display = 'none'
+  })
+}
+
 function darkMode () {
   const navbarIconMoonHTML = document.querySelector('.navbar__icon-moon')
   const navbarIconSunHTML = document.querySelector('.navbar__icon-sun')
@@ -47,10 +55,9 @@ function saveDarkMode () {
 }
 
 function main () {
-    
+  preloader()
   darkMode()
   saveDarkMode()
-
 }
 
 main()

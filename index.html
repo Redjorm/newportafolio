@@ -21,6 +21,15 @@
 </head>
 
 <body>
+   <div class="preloader">
+      <div class="spin">
+         <div class="spin">
+            <div class="spin"></div>
+         </div>
+      </div>
+   </div>
+
+
    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
          <a class="navbar-brand text-white fs-3" href="#">Jesús Camacho</a>
@@ -65,7 +74,8 @@
          <div class="row">
             <div class="col-md-5 text-white mt-4 ms-md-5 text-center-xs" style="z-index: 1;">
                <h1 class="fw-normal">Desarrollo web Front-end</h1>
-               <p class="description">Manejo Professional de herramientas para diseño y desarrollo de páginas web adquirido a lo largo de mi
+               <p class="description">Manejo Professional de herramientas para diseño y desarrollo de páginas web
+                  adquirido a lo largo de mi
                   carrera</p>
                <a class="btn btn-lg btn-primary" href="#portfolio">Mis Trabajos <i
                      class="bi bi-arrow-right-circle"></i></a>
@@ -136,98 +146,74 @@
    </section>
 
    <!-- seccion Portafolio -->
-   <section id="portfolio" class="portfolio">
-      <div class="container">
-         <div class="section-title">
-            <h2>Portafolio</h2>
+   <section class="portfolio">
+
+      <div>
+         <img src="img/portafolio1.PNG">
+         <div class="portfolio-info">
+            <h4>Sistema Estadistica</h4>
+
+            <p class="me-5">Laravel y bootstrap</p>
+            <div class="portafolio__icons">
+               <a href="img/portafolio1.PNG" title="Sistema Estadistica" class="preview-link popup-image"><i
+                     class="bi bi-plus"></i></a>
+            </div>
+
          </div>
-         <ul id="portfolio-filters" class="d-flex justify-content-center">
-            <li data-filter="*" class="filter-active">Todo</li>
-            <li data-filter=".filter-laravel">Laravel</li>
-            <li data-filter=".filter-js">Javacript Vanilla</li>
-            <li data-filter=".filter-react">React</li>
-         </ul>
-         <div class="row portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-laravel mb-4">
-               <div class="portfolio-img">
-                  <img src="img/portafolio1.PNG" class="img-fluid ">
-                  <div class="portfolio-info">
-                     <h4>Sistema Estadistica</h4>
-
-                     <p class="me-5">Laravel y bootstrap</p>
-
-                     <a href="img/portafolio1.PNG" title="Sistema Estadistica" class="preview-link popup-image"><i
-                           class="bi bi-plus"></i></a>
-
-                  </div>
-               </div>
-            </div>
+      </div>
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-laravel mb-4">
-               <div class="portfolio-img">
-                  <img src="img/portafolio2.PNG" class="img-fluid ">
-                  <div class="portfolio-info">
-                     <h4>Sistema de registro de Repuestos</h4>
+      <div class="portfolio-img">
+         <img src="img/portafolio3.PNG" class="img-fluid">
+         <div class="portfolio-info">
+            <h4>Ecommerce</h4>
 
-                     <p class="me-5">Laravel y bootstrap</p>
-
-                     <a href="img/portafolio2.PNG" title="Sistema de registro de Repuestos"
-                        class="preview-link popup-image"><i class="bi bi-plus"></i></a>
-
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-js mb-4">
-               <div class="portfolio-img">
-                  <img src="img/portafolio3.PNG" class="img-fluid">
-                  <div class="portfolio-info">
-                     <h4>Ecommerce</h4>
-
-                     <p class="me-5">Javacript Vanilla y cosnsumo de api</p>
-
-                     <a href="img/portafolio3.PNG" title="Ecommerce" class="preview-link popup-image"><i
-                           class="bi bi-plus "></i></a>
-                     <a href="https://academlostore-jc.netlify.app/" title="Ver más" target="_blank"
-                        class="details-link"><i class="bi bi-link"></i></a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-               <div class="portfolio-img">
-                  <img src="img/portafolio4.PNG" class="img-fluid">
-                  <div class="portfolio-info">
-                     <h4>Galletas De La Fortuna</h4>
-
-                     <p class="me-5">Aplicación web hecha con react y consumo de API</p>
-
-                     <a href="img/portafolio4.PNG" title="Galletas De La Fortuna" class="preview-link popup-image"><i
-                           class="bi bi-plus"></i></a>
-                     <a href="https://galletasdelafortuna-jc.netlify.app/" title="Ver más" target="_blank "
-                        class="details-link"><i class="bi bi-link "></i></a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-react">
-               <div class="portfolio-img">
-                  <img src="img/portafolio5.PNG" class="img-fluid">
-                  <div class="portfolio-info">
-                     <h4>Aplicación del clima</h4>
-
-                     <p class="me-5">Aplicación web hecha con react y consumo de API</p>
-
-                     <a href="img/portafolio5.PNG" title="Aplicación del clima" class="preview-link popup-image"><i
-                           class="bi bi-plus"></i></a>
-                     <a href="https://weather-app-jlcm.netlify.app/" title="Ver más" target="_blank "
-                        class="details-link"><i class="bi bi-link "></i></a>
-                  </div>
-               </div>
+            <p class="me-5">Javacript y cosnsumo de api</p>
+            <div class="portafolio__icons">
+               <a href="img/portafolio3.PNG" title="Ecommerce" class="preview-link popup-image"><i
+                     class="bi bi-plus "></i></a>
+               <a href="https://academlostore-jc.netlify.app/" title="Ver más" target="_blank" class="details-link"><i
+                     class="bi bi-link"></i></a>
             </div>
          </div>
       </div>
+
+      <div class="portfolio-img">
+         <img src="img/portafolio5.PNG" class="img-fluid">
+         <div class="portfolio-info">
+            <h4>Aplicación del clima</h4>
+
+            <p class="me-5">Aplicación web hecha con react</p>
+            <div class="portafolio__icons">
+               <a href="img/portafolio5.PNG" title="Aplicación del clima" class="preview-link popup-image"><i
+                     class="bi bi-plus"></i></a>
+               <a href="https://weather-app-jlcm.netlify.app/" title="Ver más" target="_blank " class="details-link"><i
+                     class="bi bi-link "></i></a>
+            </div>
+         </div>
+      </div>
+
+
+
+      <div class="portfolio-img">
+         <img src="img/portafolio4.PNG" class="img-fluid">
+         <div class="portfolio-info">
+            <h4>Galletas De La Fortuna</h4>
+
+            <p class="me-5">Aplicación web hecha con react y consumo de API</p>
+
+            <div class="portafolio__icons">
+               <a href="img/portafolio4.PNG" title="Galletas De La Fortuna" class="preview-link popup-image"><i
+                     class="bi bi-plus"></i></a>
+               <a href="https://galletasdelafortuna-jc.netlify.app/" title="Ver más" target="_blank "
+                  class="details-link"><i class="bi bi-link "></i></a>
+            </div>
+         </div>
+      </div>
+
+
+
+
    </section>
 
 
