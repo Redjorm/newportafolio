@@ -3,9 +3,10 @@
    --backgroundColor: white;
    --backgroundColorSection: #f1f1f3;
    --primaryColor: rgb(42, 85, 167);
-   --servevices: rgba(42, 86, 167, 0.882);
+   --servevices: rgb(69, 109, 182);
    --scrollColor: rgb(42, 85, 167);
    --textcolor: white;
+   --textcolor2: black;
    --serviceIcon: black;
    --borders: white;
    --btnColor: rgb(25, 55, 109);
@@ -20,6 +21,7 @@ body.dark-theme {
    --backgroundColorSection: #000000;
    --primaryColor: rgb(0, 0, 0);
    --textcolor: rgb(255, 255, 255);
+   --textcolor2: white;
    --serviceIcon: white;
    --borders: white;
    --colorTitle: rgb(255, 255, 255);
@@ -188,6 +190,11 @@ section {
 }
 
 /* about */
+
+.about__section-title{
+   color: var(--textcolor2)
+}
+
 .about {
    display: flex;
    flex-direction: column;
