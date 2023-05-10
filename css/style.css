@@ -1,8 +1,9 @@
 :root {
    --backgroundColorInit: linear-gradient(90deg, rgb(62, 82, 161) 0%, rgb(134, 189, 207) 100%);
    --backgroundColor: white;
-   --backgroundColorSection: #F9F9FD;
+   --backgroundColorSection: #f1f1f3;
    --primaryColor: rgb(42, 85, 167);
+   --servevices: rgba(42, 86, 167, 0.882);
    --scrollColor: rgb(42, 85, 167);
    --textcolor: white;
    --serviceIcon: black;
@@ -42,7 +43,9 @@ body::-webkit-scrollbar-thumb {
    background: var(--scrollColor);
 }
 
-h4, p , span{
+h4,
+p,
+span {
    color: var(--serviceIcon);
 }
 
@@ -166,7 +169,7 @@ section {
    font-weight: bold;
    text-transform: uppercase;
    margin-bottom: 20px;
-   color: var(--colorTitle);
+   color: white;
 }
 
 .description {
@@ -185,6 +188,23 @@ section {
 }
 
 /* about */
+.about {
+   display: flex;
+   flex-direction: column;
+   padding: 5rem;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+}
+
+.member {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+}
+
 
 .about .member {
    padding: 30px;
@@ -240,10 +260,42 @@ section {
    color: white;
 }
 
+.porta__img {
+   width: 180px;
+
+}
+
+.porta__img img {
+
+   border-radius: 20px;
+}
+
 
 /* services */
+.services {
+   background-color: var(--servevices);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.services__cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3em;
+   justify-content: center;
+   padding: 5rem 2rem;
+}
+
+.services__card {
+   width: 290px;
+}
+
 
 .services .icon-box {
+   border-radius: 0.2em;
+   height: 400px;
    padding: 33px 25px;
    text-align: center;
    background: var(--backgroundColor);
@@ -312,6 +364,13 @@ section {
 
 /* footer */
 
+.footer__port{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3em;
+   justify-content: center;
+}
+
 footer {
    border-top: 1px solid var(--primaryColor);
    padding-top: 44px;
@@ -373,7 +432,6 @@ footer .social a {
    .navbar-collapse {
       padding-bottom: 19px;
    }
-
    .wave {
       padding-top: 6rem;
    }
@@ -387,4 +445,12 @@ footer .social a {
    .text-center-xs img {
       width: 366px;
    }
+}
+
+
+@media (min-width: 768px) {
+   .member {
+      flex-direction: row;
+   }
+
 }
